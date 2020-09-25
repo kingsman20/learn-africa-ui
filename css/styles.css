@@ -1,0 +1,247 @@
+html,
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.main-two {
+    text-align: center;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+.logoContainer {
+  width: 100%;
+}
+
+.welcome-logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.text-small {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 120% !important;
+}
+
+.text-color {
+    color: #999900;
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.buttonContainer a {
+  text-decoration: none;
+}
+
+.button-dark {
+  width: 80%;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #08192d;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  max-width: 300px;
+}
+
+.button-light {
+  width: 80%;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #08192d;
+  text-transform: uppercase;
+  border: 2px solid #08192d;
+  border-radius: 20px;
+  max-width: 300px;
+}
+
+.header {
+  padding: 10px;
+  box-shadow: 0px 0px 8px 1px #08192d;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  margin-left: 10px;
+  font-family: verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 120% !important;
+  color: #999900;
+}
+
+.image-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.register-text-header {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 120% !important;
+  margin-bottom: 10px;
+}
+
+.register-text {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 120% !important;
+  margin: 10px;
+}
+
+.input-group-one {
+  position: relative;
+  margin-bottom: 40px;
+  width: 280px;
+}
+
+.input-group-two {
+  position: relative;
+  width: 280px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #4285f4;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #4285f4;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* animations */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #4285f4;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #4285f4;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #4285f4;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
