@@ -24,13 +24,23 @@ body {
 }
 
 .main-two {
+  text-align: center;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.main-three {
     text-align: center;
     display: flex;
     height: 90vh;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
+    flex-wrap: wrap;
   }
 
 .logoContainer {
@@ -51,8 +61,16 @@ body {
   line-height: 120% !important;
 }
 
+.text-large {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 100% !important;
+}
+
 .text-color {
-    color: #999900;
+  color: #999900;
 }
 
 .buttonContainer {
@@ -105,6 +123,12 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+.book-style {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 35%;
 }
 
 .register-text-header {
@@ -244,4 +268,32 @@ input:focus ~ .highlight {
     width: 0;
     background: transparent;
   }
+}
+
+.books-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  min-height: 220px;
+  width: 45%;
+  margin: 10px;
+}
+
+.card .title {
+  margin: 10px;
+}
+
+.card .btn {
+  height: 15%;
+  background-color: #08192d;
+  color: #fff;
+  width: 80%;
+  border-radius: 20px;
+  margin: 5px;
 }
