@@ -14,13 +14,25 @@ body {
 }
 
 .section-one {
-    background: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.76)), url('../images/background-three.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.76)), url('../images/bg-four.jpeg');
     background-size: cover;
     background-position: center;
 }
 
 .section-two {
-    background: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.76)), url('../images/background-two.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.76)), url('../images/bg-one.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-three {
+    background: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.76)), url('../images/bg-three.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-four {
+    background: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.76)), url('../images/bg-two.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -125,9 +137,9 @@ body {
 .header-text {
   margin-left: 10px;
   font-family: verdana, Arial, Helvetica, sans-serif !important;
-  font-size: 14px !important;
-  line-height: 120% !important;
-  color: #999900;
+  font-size: 18px;
+  line-height: 120%;
+  color:  #08192d;
 }
 
 .image-style {
